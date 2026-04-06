@@ -1,0 +1,19 @@
+# Xcode
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+
+# macOS
+.DS_Store
+
+# Python prototype
+__pycache__/
+*.pyc
+
+# Build
+*.app
+*.ipa
+*.dSYM.zip
+*.dSYM

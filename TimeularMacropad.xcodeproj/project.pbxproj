@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E47A0C10465DBD4FBB08563 /* ActionExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B961F61691ABFB8F07E742B4 /* ActionExecutor.swift */; };
+		1DD4226F36F7EC692094EDE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70385A31CF3ED64E5C266B0B /* Assets.xcassets */; };
+		23836BDE2C31B97F278B69EA /* SideEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C0AB950F8C8DE8D8DE2BB /* SideEditView.swift */; };
+		35653BC58CD5E885620E9DD9 /* TimeularMacropadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92894F997E53545556A7CED5 /* TimeularMacropadApp.swift */; };
+		5310AB98CCDD5EE300FA07DD /* SideAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8191155D81350FD544F5904 /* SideAction.swift */; };
+		7C4A095CD760AA64FCC73B6A /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987A0EB7844C3981954441E8 /* BluetoothManager.swift */; };
+		A2FDE5313B2464889DC90CA8 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C78AEBA10B58471D498DCA /* MenuBarView.swift */; };
+		EC4C9EA72DF93E54EAB30B52 /* ActionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A82ABBCD2F8240AF5F4CE9C /* ActionStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A82ABBCD2F8240AF5F4CE9C /* ActionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStore.swift; sourceTree = "<group>"; };
+		47D872F5810A3430433DDE45 /* TimeularMacropad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeularMacropad.entitlements; sourceTree = "<group>"; };
+		70385A31CF3ED64E5C266B0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		710C0AB950F8C8DE8D8DE2BB /* SideEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEditView.swift; sourceTree = "<group>"; };
+		91251B13B3A56CBC0BBF3F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		92894F997E53545556A7CED5 /* TimeularMacropadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeularMacropadApp.swift; sourceTree = "<group>"; };
+		97C78AEBA10B58471D498DCA /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		987A0EB7844C3981954441E8 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		B961F61691ABFB8F07E742B4 /* ActionExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionExecutor.swift; sourceTree = "<group>"; };
+		E8191155D81350FD544F5904 /* SideAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideAction.swift; sourceTree = "<group>"; };
+		EFD0DF6F7A022706A18DA0C9 /* TimeularMacropad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeularMacropad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		49021783ECB56F08E9C6A1C2 = {
+			isa = PBXGroup;
+			children = (
+				B3D0814992B8D027F4EFCCA9 /* TimeularMacropad */,
+				FF32A3608C7C381B09C11D55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3D0814992B8D027F4EFCCA9 /* TimeularMacropad */ = {
+			isa = PBXGroup;
+			children = (
+				B961F61691ABFB8F07E742B4 /* ActionExecutor.swift */,
+				2A82ABBCD2F8240AF5F4CE9C /* ActionStore.swift */,
+				70385A31CF3ED64E5C266B0B /* Assets.xcassets */,
+				987A0EB7844C3981954441E8 /* BluetoothManager.swift */,
+				91251B13B3A56CBC0BBF3F63 /* Info.plist */,
+				97C78AEBA10B58471D498DCA /* MenuBarView.swift */,
+				E8191155D81350FD544F5904 /* SideAction.swift */,
+				710C0AB950F8C8DE8D8DE2BB /* SideEditView.swift */,
+				47D872F5810A3430433DDE45 /* TimeularMacropad.entitlements */,
+				92894F997E53545556A7CED5 /* TimeularMacropadApp.swift */,
+			);
+			path = TimeularMacropad;
+			sourceTree = "<group>";
+		};
+		FF32A3608C7C381B09C11D55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0DF6F7A022706A18DA0C9 /* TimeularMacropad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F5C853F798DCA179FA2C911 /* TimeularMacropad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77CC63933ED54F12D68D7914 /* Build configuration list for PBXNativeTarget "TimeularMacropad" */;
+			buildPhases = (
+				685B1CBBF6AB465A65DB531B /* Sources */,
+				AF6A9BD1AE35CB6C007040F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeularMacropad;
+			packageProductDependencies = (
+			);
+			productName = TimeularMacropad;
+			productReference = EFD0DF6F7A022706A18DA0C9 /* TimeularMacropad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC308E60B91D798734628486 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 0CE07F8763DD9A7CAB0F55F6 /* Build configuration list for PBXProject "TimeularMacropad" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 49021783ECB56F08E9C6A1C2;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FF32A3608C7C381B09C11D55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F5C853F798DCA179FA2C911 /* TimeularMacropad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF6A9BD1AE35CB6C007040F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD4226F36F7EC692094EDE8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		685B1CBBF6AB465A65DB531B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E47A0C10465DBD4FBB08563 /* ActionExecutor.swift in Sources */,
+				EC4C9EA72DF93E54EAB30B52 /* ActionStore.swift in Sources */,
+				7C4A095CD760AA64FCC73B6A /* BluetoothManager.swift in Sources */,
+				A2FDE5313B2464889DC90CA8 /* MenuBarView.swift in Sources */,
+				5310AB98CCDD5EE300FA07DD /* SideAction.swift in Sources */,
+				23836BDE2C31B97F278B69EA /* SideEditView.swift in Sources */,
+				35653BC58CD5E885620E9DD9 /* TimeularMacropadApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3F62C5F6A9F1E7CC632AE6EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A9B73136830A0BE7DB1A0B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimeularMacropad/TimeularMacropad.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = TimeularMacropad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timeular.macropad;
+				PRODUCT_NAME = "Timeular Macropad";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		AE255AAD1562AD58A84D9243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E4047EFD8229574081D65653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TimeularMacropad/TimeularMacropad.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = TimeularMacropad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timeular.macropad;
+				PRODUCT_NAME = "Timeular Macropad";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CE07F8763DD9A7CAB0F55F6 /* Build configuration list for PBXProject "TimeularMacropad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F62C5F6A9F1E7CC632AE6EB /* Debug */,
+				AE255AAD1562AD58A84D9243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		77CC63933ED54F12D68D7914 /* Build configuration list for PBXNativeTarget "TimeularMacropad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4047EFD8229574081D65653 /* Debug */,
+				A9B73136830A0BE7DB1A0B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC308E60B91D798734628486 /* Project object */;
+}
