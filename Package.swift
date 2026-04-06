@@ -8,12 +8,12 @@ let package = Package(
         .executableTarget(
             name: "TimeularMacropad",
             path: "TimeularMacropad",
-            resources: [
-                .process("Assets.xcassets"),
-            ],
             exclude: [
                 "Info.plist",
                 "TimeularMacropad.entitlements",
+            ],
+            resources: [
+                .process("Assets.xcassets"),
             ]
         ),
     ]

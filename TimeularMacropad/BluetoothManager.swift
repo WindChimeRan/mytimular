@@ -34,24 +34,31 @@ final class BluetoothManager: NSObject, ObservableObject {
         centralManager = CBCentralManager(delegate: self, queue: nil)
     }
 
+    /// The advertised service UUID differs from the GATT service UUID.
+    static let advertisedServiceUUID = CBUUID(string: "00000010-0000-1000-8000-00805f9b34fb")
+
     func startScanning() {
         guard centralManager.state == .poweredOn else { return }
-        isScanning = true
-        centralManager.scanForPeripherals(
-            withServices: [Self.orientationServiceUUID],
-            options: [CBCentralManagerScanOptionAllowDuplicatesKey: false]
-        )
-        // Also try to retrieve already-connected peripherals
+        DispatchQueue.main.async { self.isScanning = true }
+
+        // Try retrieving an already-connected peripheral first
         let connected = centralManager.retrieveConnectedPeripherals(
-            withServices: [Self.orientationServiceUUID]
+            withServices: [Self.orientationServiceUUID, Self.advertisedServiceUUID]
         )
-        if let device = connected.first {
-            centralManager.stopScan()
-            isScanning = false
+        if let device = connected.first(where: {
+            $0.name?.lowercased().contains("timeular") == true
+        }) {
             peripheral = device
             device.delegate = self
             centralManager.connect(device)
+            return
         }
+
+        // Scan without service filter — the advertised UUID may vary by firmware
+        centralManager.scanForPeripherals(
+            withServices: nil,
+            options: [CBCentralManagerScanOptionAllowDuplicatesKey: false]
+        )
     }
 
     func disconnect() {
@@ -93,7 +100,7 @@ extension BluetoothManager: CBCentralManagerDelegate {
         guard name.lowercased().contains("timeular") else { return }
 
         central.stopScan()
-        isScanning = false
+        DispatchQueue.main.async { self.isScanning = false }
         self.peripheral = peripheral
         peripheral.delegate = self
         central.connect(peripheral)
@@ -102,13 +109,12 @@ extension BluetoothManager: CBCentralManagerDelegate {
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         DispatchQueue.main.async {
             self.isConnected = true
+            self.isScanning = false
         }
         reconnectTimer?.invalidate()
         reconnectTimer = nil
-        peripheral.discoverServices([
-            Self.orientationServiceUUID,
-            Self.batteryServiceUUID,
-        ])
+        // Discover all services — UUIDs may differ between advertisement and GATT
+        peripheral.discoverServices(nil)
     }
 
     func centralManager(

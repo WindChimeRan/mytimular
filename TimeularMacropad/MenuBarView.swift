@@ -58,9 +58,13 @@ struct MenuBarView: View {
                         .foregroundColor(.secondary)
                 }
             } else {
-                Text("Disconnected")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                Button {
+                    bluetoothManager.startScanning()
+                } label: {
+                    Label(bluetoothManager.isScanning ? "Scanning..." : "Reconnect", systemImage: "arrow.clockwise")
+                        .font(.caption)
+                }
+                .disabled(bluetoothManager.isScanning)
             }
         }
         .padding(.horizontal, 16)
