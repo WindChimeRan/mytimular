@@ -1,0 +1,52 @@
+{
+  "_comment": "Map each side (1-8) to an action. Types: 'shell' runs a command, 'keystroke' sends a key combo via AppleScript.",
+  "actions": {
+    "1": {
+      "type": "shell",
+      "command": "open -a 'Terminal'",
+      "label": "Terminal"
+    },
+    "2": {
+      "type": "shell",
+      "command": "open -a 'Safari'",
+      "label": "Safari"
+    },
+    "3": {
+      "type": "shell",
+      "command": "open -a 'Finder'",
+      "label": "Finder"
+    },
+    "4": {
+      "type": "keystroke",
+      "key": "space",
+      "modifiers": [
+        "command"
+      ],
+      "label": "Spotlight"
+    },
+    "5": {
+      "type": "shell",
+      "command": "open -a 'Notes'",
+      "label": "Notes"
+    },
+    "6": {
+      "type": "keystroke",
+      "key": "3",
+      "modifiers": [
+        "command",
+        "shift"
+      ],
+      "label": "Screenshot"
+    },
+    "7": {
+      "type": "shell",
+      "command": "say 'Side seven'",
+      "label": "Say Side 7"
+    },
+    "8": {
+      "type": "shell",
+      "command": "open -a 'Activity Monitor'",
+      "label": "Activity Monitor"
+    }
+  }
+}
