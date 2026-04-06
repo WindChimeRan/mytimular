@@ -9,11 +9,25 @@ struct MenuBarView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            header
-            Divider()
-            sideList
-            Divider()
-            footer
+            if let side = editingSide {
+                // Inline edit view — replaces the side list
+                SideEditView(
+                    action: actionStore.action(for: side),
+                    onSave: { updated in
+                        actionStore.update(updated)
+                        editingSide = nil
+                    },
+                    onCancel: {
+                        editingSide = nil
+                    }
+                )
+            } else {
+                header
+                Divider()
+                sideList
+                Divider()
+                footer
+            }
         }
         .padding(.vertical, 8)
         .onAppear {
@@ -24,19 +38,6 @@ struct MenuBarView: View {
                     ActionExecutor.execute(action)
                 }
             }
-        }
-        .sheet(item: $editingSide) { side in
-            SideEditView(
-                action: actionStore.action(for: side),
-                onSave: { updated in
-                    actionStore.update(updated)
-                    editingSide = nil
-                },
-                onCancel: {
-                    editingSide = nil
-                }
-            )
-            .frame(width: 340)
         }
     }
 
@@ -155,9 +156,4 @@ struct MenuBarView: View {
             print("Failed to set login item: \(error)")
         }
     }
-}
-
-// Make Int conform to Identifiable for sheet presentation
-extension Int: @retroactive Identifiable {
-    public var id: Int { self }
 }
